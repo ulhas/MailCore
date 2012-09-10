@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* TestMailCoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* TestMailCoreViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		500FFB2113BC234E00E07765 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500FFB2013BC234E00E07765 /* SettingsViewController.m */; };
+		500FFB2313BC237100E07765 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500FFB2213BC237100E07765 /* SettingsViewController.xib */; };
+		500FFB4213BC275F00E07765 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 500FFB4113BC275F00E07765 /* AccountManager.m */; };
+		500FFB5C13BC28E900E07765 /* Foundation+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 500FFB5B13BC28E900E07765 /* Foundation+Singleton.m */; };
+		5017ACC813B984D200C6C41A /* TestMailCoreAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TestMailCoreAppDelegate.m */; };
+		5017ACC913B984D500C6C41A /* TestMailCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TestMailCoreViewController.m */; };
+		50685AC513C30ED3005711CB /* UITextField+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50685AC413C30ED3005711CB /* UITextField+Validate.m */; };
+		506A629013BDB2FC0057F368 /* XCTCoreAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A628F13BDB2FC0057F368 /* XCTCoreAccount.m */; };
+		5070CF6B13B9915A0057E820 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5070CF6113B9915A0057E820 /* SystemConfiguration.framework */; };
+		5070CF6C13B9915B0057E820 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5070CF6213B9915A0057E820 /* MessageUI.framework */; };
+		5070CF6F13B9915B0057E820 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5070CF6513B9915A0057E820 /* CoreLocation.framework */; };
+		5070CF7013B9915B0057E820 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5070CF6613B9915A0057E820 /* AddressBook.framework */; };
+		5070CF7113B9915B0057E820 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5070CF6713B9915A0057E820 /* StoreKit.framework */; };
+		5070CF7213B9915B0057E820 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5070CF6813B9915A0057E820 /* QuartzCore.framework */; };
+		5079E46513C5620F00574A03 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5079E46413C5620F00574A03 /* libiconv.2.dylib */; };
+		50D13C7C13C5735E007EA5DA /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D13C7913C5735E007EA5DA /* libcrypto.a */; };
+		50D13C7D13C5735E007EA5DA /* libmailcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D13C7A13C5735E007EA5DA /* libmailcore.a */; };
+		50D13C7E13C5735E007EA5DA /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D13C7B13C5735E007EA5DA /* libssl.a */; };
+		50D13C8E13C57977007EA5DA /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D13C8B13C57977007EA5DA /* libcrypto.a */; };
+		50D13C8F13C57977007EA5DA /* libmailcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D13C8C13C57977007EA5DA /* libmailcore.a */; };
+		50D13C9013C57977007EA5DA /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D13C8D13C57977007EA5DA /* libssl.a */; };
+		50D13C9A13C57A6D007EA5DA /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D13C9713C57A6D007EA5DA /* libcrypto.a */; };
+		50D13C9B13C57A6D007EA5DA /* libmailcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D13C9813C57A6D007EA5DA /* libmailcore.a */; };
+		50D13C9C13C57A6D007EA5DA /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D13C9913C57A6D007EA5DA /* libssl.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* TestMailCoreAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMailCoreAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TestMailCoreAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMailCoreAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TestMailCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMailCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* TestMailCoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestMailCoreViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* TestMailCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMailCoreViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* TestMailCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMailCoreViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* TestMailCore_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMailCore_Prefix.pch; sourceTree = "<group>"; };
+		500FFB1F13BC234E00E07765 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		500FFB2013BC234E00E07765 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		500FFB2213BC237100E07765 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = Classes/SettingsViewController.xib; sourceTree = "<group>"; };
+		500FFB4013BC275F00E07765 /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; path = AccountManager.h; sourceTree = "<group>"; };
+		500FFB4113BC275F00E07765 /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
+		500FFB5A13BC28E900E07765 /* Foundation+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+Singleton.h"; sourceTree = "<group>"; };
+		500FFB5B13BC28E900E07765 /* Foundation+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Singleton.m"; sourceTree = "<group>"; };
+		50685AC313C30ED3005711CB /* UITextField+Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Validate.h"; sourceTree = "<group>"; };
+		50685AC413C30ED3005711CB /* UITextField+Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Validate.m"; sourceTree = "<group>"; };
+		506A628E13BDB2FC0057F368 /* XCTCoreAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTCoreAccount.h; sourceTree = "<group>"; };
+		506A628F13BDB2FC0057F368 /* XCTCoreAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTCoreAccount.m; sourceTree = "<group>"; };
+		5070CF6113B9915A0057E820 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		5070CF6213B9915A0057E820 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		5070CF6513B9915A0057E820 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5070CF6613B9915A0057E820 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
+		5070CF6713B9915A0057E820 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5070CF6813B9915A0057E820 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5079E46413C5620F00574A03 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = usr/lib/libiconv.2.dylib; sourceTree = SDKROOT; };
+		50C4D07313C1702B00962EC3 /* Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
+		50D13C7913C5735E007EA5DA /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "External/iPhoneOS-V7-4.3/lib/libcrypto.a"; sourceTree = "<group>"; };
+		50D13C7A13C5735E007EA5DA /* libmailcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmailcore.a; path = "External/iPhoneOS-V7-4.3/lib/libmailcore.a"; sourceTree = "<group>"; };
+		50D13C7B13C5735E007EA5DA /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "External/iPhoneOS-V7-4.3/lib/libssl.a"; sourceTree = "<group>"; };
+		50D13C8B13C57977007EA5DA /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "External/iPhoneSimulator-4.3/lib/libcrypto.a"; sourceTree = "<group>"; };
+		50D13C8C13C57977007EA5DA /* libmailcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmailcore.a; path = "External/iPhoneSimulator-4.3/lib/libmailcore.a"; sourceTree = "<group>"; };
+		50D13C8D13C57977007EA5DA /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "External/iPhoneSimulator-4.3/lib/libssl.a"; sourceTree = "<group>"; };
+		50D13C9713C57A6D007EA5DA /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "External/iPhoneOS-V6-4.3/lib/libcrypto.a"; sourceTree = "<group>"; };
+		50D13C9813C57A6D007EA5DA /* libmailcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmailcore.a; path = "External/iPhoneOS-V6-4.3/lib/libmailcore.a"; sourceTree = "<group>"; };
+		50D13C9913C57A6D007EA5DA /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "External/iPhoneOS-V6-4.3/lib/libssl.a"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TestMailCore-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestMailCore-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D13C9A13C57A6D007EA5DA /* libcrypto.a in Frameworks */,
+				50D13C9B13C57A6D007EA5DA /* libmailcore.a in Frameworks */,
+				50D13C9C13C57A6D007EA5DA /* libssl.a in Frameworks */,
+				50D13C8E13C57977007EA5DA /* libcrypto.a in Frameworks */,
+				50D13C8F13C57977007EA5DA /* libmailcore.a in Frameworks */,
+				50D13C9013C57977007EA5DA /* libssl.a in Frameworks */,
+				50D13C7C13C5735E007EA5DA /* libcrypto.a in Frameworks */,
+				50D13C7D13C5735E007EA5DA /* libmailcore.a in Frameworks */,
+				50D13C7E13C5735E007EA5DA /* libssl.a in Frameworks */,
+				5079E46513C5620F00574A03 /* libiconv.2.dylib in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				5070CF6B13B9915A0057E820 /* SystemConfiguration.framework in Frameworks */,
+				5070CF6C13B9915B0057E820 /* MessageUI.framework in Frameworks */,
+				5070CF6F13B9915B0057E820 /* CoreLocation.framework in Frameworks */,
+				5070CF7013B9915B0057E820 /* AddressBook.framework in Frameworks */,
+				5070CF7113B9915B0057E820 /* StoreKit.framework in Frameworks */,
+				5070CF7213B9915B0057E820 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D5490E13BA2A3700E2AD3D /* ExternalLibs */ = {
+			isa = PBXGroup;
+			children = (
+				50D13C9213C579A3007EA5DA /* iOS Simulator 4.3 SDK */,
+				50D13C9D13C57A74007EA5DA /* ARMv6 arch | iOS4.3 */,
+				50D13C9113C57980007EA5DA /* ARMv7 arch | iOS 4.3 */,
+				5079E46413C5620F00574A03 /* libiconv.2.dylib */,
+			);
+			name = ExternalLibs;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* TestMailCoreAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TestMailCoreAppDelegate.m */,
+				50685AC813C31088005711CB /* Categories */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TestMailCore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				500FFB4313BC276600E07765 /* Model */,
+				500FFB4613BC279E00E07765 /* View */,
+				500FFB3F13BC272400E07765 /* Controllers */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* TestMailCore_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				50C4D07313C1702B00962EC3 /* Keys.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* TestMailCore-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01D5490E13BA2A3700E2AD3D /* ExternalLibs */,
+				5070CF6113B9915A0057E820 /* SystemConfiguration.framework */,
+				5070CF6213B9915A0057E820 /* MessageUI.framework */,
+				5070CF6513B9915A0057E820 /* CoreLocation.framework */,
+				5070CF6613B9915A0057E820 /* AddressBook.framework */,
+				5070CF6713B9915A0057E820 /* StoreKit.framework */,
+				5070CF6813B9915A0057E820 /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		500FFB3F13BC272400E07765 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				500FFB4413BC277300E07765 /* TestMailCoreViewController */,
+				500FFB4513BC277F00E07765 /* SettingsViewController */,
+			);
+			name = Controllers;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		500FFB4313BC276600E07765 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				500FFB4013BC275F00E07765 /* AccountManager.h */,
+				500FFB4113BC275F00E07765 /* AccountManager.m */,
+				506A628E13BDB2FC0057F368 /* XCTCoreAccount.h */,
+				506A628F13BDB2FC0057F368 /* XCTCoreAccount.m */,
+			);
+			name = Model;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		500FFB4413BC277300E07765 /* TestMailCoreViewController */ = {
+			isa = PBXGroup;
+			children = (
+				28D7ACF60DDB3853001CB0EB /* TestMailCoreViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* TestMailCoreViewController.m */,
+			);
+			name = TestMailCoreViewController;
+			sourceTree = "<group>";
+		};
+		500FFB4513BC277F00E07765 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				500FFB1F13BC234E00E07765 /* SettingsViewController.h */,
+				500FFB2013BC234E00E07765 /* SettingsViewController.m */,
+			);
+			name = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		500FFB4613BC279E00E07765 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				500FFB2213BC237100E07765 /* SettingsViewController.xib */,
+				2899E5210DE3E06400AC0155 /* TestMailCoreViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		500FFB5913BC28E900E07765 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				500FFB5A13BC28E900E07765 /* Foundation+Singleton.h */,
+				500FFB5B13BC28E900E07765 /* Foundation+Singleton.m */,
+			);
+			name = Singleton;
+			path = ../Singleton;
+			sourceTree = "<group>";
+		};
+		50685AC813C31088005711CB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				50685AC913C31093005711CB /* Validate UITextField */,
+				500FFB5913BC28E900E07765 /* Singleton */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		50685AC913C31093005711CB /* Validate UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				50685AC313C30ED3005711CB /* UITextField+Validate.h */,
+				50685AC413C30ED3005711CB /* UITextField+Validate.m */,
+			);
+			name = "Validate UITextField";
+			sourceTree = "<group>";
+		};
+		50D13C9113C57980007EA5DA /* ARMv7 arch | iOS 4.3 */ = {
+			isa = PBXGroup;
+			children = (
+				50D13C7913C5735E007EA5DA /* libcrypto.a */,
+				50D13C7A13C5735E007EA5DA /* libmailcore.a */,
+				50D13C7B13C5735E007EA5DA /* libssl.a */,
+			);
+			name = "ARMv7 arch | iOS 4.3";
+			sourceTree = "<group>";
+		};
+		50D13C9213C579A3007EA5DA /* iOS Simulator 4.3 SDK */ = {
+			isa = PBXGroup;
+			children = (
+				50D13C8B13C57977007EA5DA /* libcrypto.a */,
+				50D13C8C13C57977007EA5DA /* libmailcore.a */,
+				50D13C8D13C57977007EA5DA /* libssl.a */,
+			);
+			name = "iOS Simulator 4.3 SDK";
+			sourceTree = "<group>";
+		};
+		50D13C9D13C57A74007EA5DA /* ARMv6 arch | iOS4.3 */ = {
+			isa = PBXGroup;
+			children = (
+				50D13C9713C57A6D007EA5DA /* libcrypto.a */,
+				50D13C9813C57A6D007EA5DA /* libmailcore.a */,
+				50D13C9913C57A6D007EA5DA /* libssl.a */,
+			);
+			name = "ARMv6 arch | iOS4.3";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TestMailCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TestMailCore" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestMailCore;
+			productName = TestMailCore;
+			productReference = 1D6058910D05DD3D006BFB54 /* TestMailCore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestMailCore" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TestMailCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* TestMailCoreViewController.xib in Resources */,
+				500FFB2313BC237100E07765 /* SettingsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				5017ACC813B984D200C6C41A /* TestMailCoreAppDelegate.m in Sources */,
+				5017ACC913B984D500C6C41A /* TestMailCoreViewController.m in Sources */,
+				500FFB2113BC234E00E07765 /* SettingsViewController.m in Sources */,
+				500FFB4213BC275F00E07765 /* AccountManager.m in Sources */,
+				500FFB5C13BC28E900E07765 /* Foundation+Singleton.m in Sources */,
+				506A629013BDB2FC0057F368 /* XCTCoreAccount.m in Sources */,
+				50685AC513C30ED3005711CB /* UITextField+Validate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestMailCore_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/External/include\"/**";
+				INFOPLIST_FILE = "TestMailCore-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External/iPhoneSimulator-4.3/lib\"",
+					"\"$(SRCROOT)/External/iPhoneOS-V6-4.3/lib\"",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos4.3][arch=armv6]" = "\"$(PROJECT_DIR)/External/iPhoneOS-V6-4.3/lib\"";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos4.3][arch=armv7]" = "\"$(PROJECT_DIR)/External/iPhoneOS-V7-4.3/lib\"";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator4.3][arch=*]" = "\"$(PROJECT_DIR)/External/iPhoneSimulator-4.3/lib\"";
+				PRODUCT_NAME = TestMailCore;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestMailCore_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/External/include\"/**";
+				INFOPLIST_FILE = "TestMailCore-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External/iPhoneSimulator-4.3/lib\"",
+					"\"$(SRCROOT)/External/iPhoneOS-V6-4.3/lib\"",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos4.3][arch=armv6]" = "\"$(PROJECT_DIR)/External/iPhoneOS-V6-4.3/lib\"";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos4.3][arch=armv7]" = "\"$(PROJECT_DIR)/External/iPhoneOS-V7-4.3/lib\"";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator4.3][arch=*]" = "\"$(PROJECT_DIR)/External/iPhoneSimulator-4.3/lib\"";
+				PRODUCT_NAME = TestMailCore;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Romin Irani (FT43V6X9RA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "705B79E9-8EB8-471D-A0C1-A2D985CDDF38";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Romin Irani (FT43V6X9RA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "705B79E9-8EB8-471D-A0C1-A2D985CDDF38";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TestMailCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestMailCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
